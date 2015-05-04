@@ -19,15 +19,14 @@ var doSplat = require("cwise")({
     this.max = Math.max
     this.floor = Math.floor
   },
-  body: function(x, y, w, out, radius, dirichlet) {
+  body: function(x, w, out, radius, dirichlet) {
     var ix = this.floor(x)|0
-    var iy = this.floor(y)|0
     var x0 = this.min(this.max(ix - this.ir, 0), this.nx)
     var x1 = this.min(this.max(ix + this.ir, 0), this.nx)
 
     //Splat point
     for(var i=x0; i<x1; ++i) {
-      out.set(i,j, out.get(i,j) + w * dirichlet(this.nx, x-i))
+      out.set(i, out.get(i) + w * dirichlet(this.nx, x-i))
     }
   }
 })
