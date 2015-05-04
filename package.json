@@ -1,7 +1,7 @@
 {
-  "name": "splat-points-2d",
+  "name": "splat-points-1d",
   "version": "1.0.0",
-  "description": "Splats a point cloud onto a 2D image",
+  "description": "Splats a point cloud onto a 1D signal",
   "main": "splat.js",
   "directories": {
     "test": "test"
@@ -23,7 +23,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/mikolalysenko/splat-points-2d.git"
+    "url": "git://github.com/mikolalysenko/splat-points-1d.git"
   },
   "keywords": [
     "splat",
@@ -37,9 +37,9 @@
   "author": "Mikola Lysenko",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mikolalysenko/splat-points-2d/issues"
+    "url": "https://github.com/mikolalysenko/splat-points-1d/issues"
   },
-  "homepage": "https://github.com/mikolalysenko/splat-points-2d",
+  "homepage": "https://github.com/mikolalysenko/splat-points-1d",
   "browserify": {
     "transform": [
       "cwise"
